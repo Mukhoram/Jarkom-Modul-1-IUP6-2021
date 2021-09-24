@@ -1,9 +1,9 @@
 # Jarkom-Modul-1-IUP6-2021
 
 
-Mukhoram Dimaputra Bagawan 05111942000006
-Fitriana Zahirah Tsabit 05111942000011
-Muhammad Rafi Hayla Arifa 05111942000014
+Mukhoram Dimaputra Bagawan 05111942000006 </br>
+Fitriana Zahirah Tsabit 05111942000011 </br>
+Muhammad Rafi Hayla Arifa 05111942000014 </br>
 
 
 **1. What web server is used on "ichimarumaru.tech"!**
