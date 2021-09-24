@@ -6,6 +6,8 @@ Fitriana Zahirah Tsabit 05111942000011 </br>
 Muhammad Rafi Hayla Arifa 05111942000014 </br>
 
 
+
+
 **1. What web server is used on "ichimarumaru.tech"!**
 
 By checking the pcap using filter `http.host ==` we can check the we server information. Our answer is `nginx`.
