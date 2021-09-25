@@ -49,6 +49,8 @@ To find the pdf, we will use `ftp-data contains Real.pdf` in the filter. The fil
 To find the secret.zip we use `ftp-data.command == "STOR secret.zip"`. </br>
 There is a 'save' keyword in the question indicating that the file you are looking for can be filtered using the STOR command <\br>
 The filter will show the packet that contains the zip. After that we click the package then right click it, press follow. Choose TCP stream, then show the data as Raw. Save the file as zip </br>
+![messageImage_1632536509694](https://user-images.githubusercontent.com/91376801/134772984-00c0fc4e-6275-45ee-b39d-0353c11389df.jpg)
+
 
 **10. Also there is "history.txt" which probably contains the history of the bash server! Use the contents of "history.txt" to find the password to open the secret file in "secret.zip"!**
 
