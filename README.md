@@ -25,11 +25,15 @@ we use `http.authbasic` again here, and by checking the last packet. In the last
 ![3 jarkom](https://user-images.githubusercontent.com/74299958/134666450-461cdcec-3daf-4e6e-96d5-c88e2abfb605.png)
 ![3 jakom 2](https://user-images.githubusercontent.com/74299958/134666508-0dbcf873-f09e-45cf-a1e9-92d55e56a4b1.png)
 
+
 **5. Login to portal.ichimarumaru.tech then follow the instructions! The username and password can be obtained from the insert query in the users table from the .pcap file!**
 
  we search `mysql` in the filter, then open each of the packets. </br>
 <img width="956" alt="jarkom 5 1" src="https://user-images.githubusercontent.com/74299958/134769557-8c6f9c9a-7974-4e2c-8732-5ae255434c5a.png">
 <img width="942" alt="jarkom 5 2" src="https://user-images.githubusercontent.com/74299958/134769561-0529d902-3e36-4541-bd2b-68a1d59cb434.png">
+
+**6. Find username and password when logging into FTP Server!**
+To find username and password we use `ftp.request.command contains "USER" || ftp.request.command contains "PASS"` 
 
 
 **7. There are 500 zip files saved to FTP Server with names 0.zip, 1.zip, 2.zip, ..., 499.zip. Save and Open the pdf file. (Hint = the name of the pdf is "Real.pdf")**
@@ -37,7 +41,13 @@ we use `http.authbasic` again here, and by checking the last packet. In the last
 To find the pdf, we will use `ftp-data contains Real.pdf` in the filter. The filter will show the packet that contains the pdf. After that we click the package then right click it, press follow. Choose TCP stream, then show the data as Raw. Save the file as pdf. </br>
 ![jarkom 7](https://user-images.githubusercontent.com/74299958/134769335-ebb47a8a-296b-4eac-b29f-e2537f582a7c.png)
 
+**9. From the packets going to FTP, there are indications of storing some files. One of them is a file containing confidential data with the name "secret.zip". Save and open the file!**
+To find the secret.zip we use `ftp-data.command == "STOR secret.zip"`. </br>
+There is a 'save' keyword in the question indicating that the file you are looking for can be filtered using the STOR command <\br>
+The filter will show the packet that contains the zip. After that we click the package then right click it, press follow. Choose TCP stream, then show the data as Raw. Save the file as zip </br>
 
+**10. Also there is "history.txt" which probably contains the history of the bash server! Use the contents of "history.txt" to find the password to open the secret file in "secret.zip"!**
+To find the history.txt we use `ftp-data.command contains "STOR history.txt"`. The filter will show the packet that contains the history.txt. After that we click the package then right click it, press follow. Choose TCP stream, then show the data as ascii. But we find the history.txt, the program direct to bukanapaapa.txt. so we use the same step `ftp-data.command contains "STOR bukanapaapa.txt"` </br>
 
 
 **11.Filter so that wireshark only picks up packets coming from port 80!**
