@@ -55,7 +55,12 @@ The filter will show the packet that contains the zip. After that we click the p
 **10. Also there is "history.txt" which probably contains the history of the bash server! Use the contents of "history.txt" to find the password to open the secret file in "secret.zip"!**
 
 
-To find the history.txt we use `ftp-data.command contains "STOR history.txt"`. The filter will show the packet that contains the history.txt. After that we click the package then right click it, press follow. Choose TCP stream, then show the data as ascii. But we find the history.txt, the program direct to bukanapaapa.txt. so we use the same step `ftp-data.command contains "STOR bukanapaapa.txt"` </br>
+To find the history.txt we use `ftp-data.command contains "STOR history.txt"`. The filter will show the packet that contains the history.txt. After that we click the package then right click it, press follow. Choose TCP stream, then show the data as ascii.</br>
+![messageImage_1632537696923](https://user-images.githubusercontent.com/91376801/134772989-4351e7af-d452-462d-9fee-93cfc547011d.jpg)
+But we find the history.txt, the program direct to bukanapaapa.txt. so we use the same step `ftp-data.command contains "STOR bukanapaapa.txt"` </br>
+![messageImage_1632537381989](https://user-images.githubusercontent.com/91376801/134772986-6a57b8fe-904e-4baf-bdea-45ee916a61d7.jpg)
+last we find
+![messageImage_1632537427842](https://user-images.githubusercontent.com/91376801/134772988-88450f1c-fd20-4c3b-9659-7037d0c0e7c0.jpg)
 
 
 **11.Filter so that wireshark only picks up packets coming from port 80!**
