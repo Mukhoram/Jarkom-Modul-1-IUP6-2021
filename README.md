@@ -26,7 +26,10 @@ we use `http.authbasic` again here, and by checking the last packet. In the last
 ![3 jakom 2](https://user-images.githubusercontent.com/74299958/134666508-0dbcf873-f09e-45cf-a1e9-92d55e56a4b1.png)
 
 **5. Login to portal.ichimarumaru.tech then follow the instructions! The username and password can be obtained from the insert query in the users table from the .pcap file!**
- we search `mysql` in the filter, then open each of the packets.
+
+ we search `mysql` in the filter, then open each of the packets. </br>
+<img width="956" alt="jarkom 5 1" src="https://user-images.githubusercontent.com/74299958/134769557-8c6f9c9a-7974-4e2c-8732-5ae255434c5a.png">
+<img width="942" alt="jarkom 5 2" src="https://user-images.githubusercontent.com/74299958/134769561-0529d902-3e36-4541-bd2b-68a1d59cb434.png">
 
 
 **7. There are 500 zip files saved to FTP Server with names 0.zip, 1.zip, 2.zip, ..., 499.zip. Save and Open the pdf file. (Hint = the name of the pdf is "Real.pdf")**
@@ -70,6 +73,11 @@ First we need to know what is our ip address. Because I'm using MacOs. Here is h
 Then, we can continue by typing `ip.addr = _you.ip.address_`. </br>
 
 <img width="470" alt="Screen Shot 2021-09-25 at 17 50 15" src="https://user-images.githubusercontent.com/74056954/134768813-f051acec-f68c-4a2a-9a78-9b756dd64e1e.png">
+
+**Our Obstacle**
+- In finding the username and password problems, we could not actually find it directly, so we search it manually per packets. </br>
+- when donwloading, we actually kinda confused a little bit of how we save it. </br>
+- in 11-15, we first confused at what file we use (wi-fi or the pcap files). </br>
 
 
 
