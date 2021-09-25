@@ -36,7 +36,7 @@ we use `http.authbasic` again here, and by checking the last packet. In the last
 
 
 To find username and password we use `ftp.request.command contains "USER" || ftp.request.command contains "PASS"`</br> 
-![messageImage_1632535448635](https://user-images.githubusercontent.com/91376801/134772982-1da994ca-262e-46f7-afb6-8ba360c105b8.jpg)
+<img width="956" alt="jarkom 6 1" src="https://user-images.githubusercontent.com/91376801/134772982-1da994ca-262e-46f7-afb6-8ba360c105b8.jpg">
 
 **7. There are 500 zip files saved to FTP Server with names 0.zip, 1.zip, 2.zip, ..., 499.zip. Save and Open the pdf file. (Hint = the name of the pdf is "Real.pdf")**
 
@@ -49,18 +49,22 @@ To find the pdf, we will use `ftp-data contains Real.pdf` in the filter. The fil
 To find the secret.zip we use `ftp-data.command == "STOR secret.zip"`. </br>
 There is a 'save' keyword in the question indicating that the file you are looking for can be filtered using the STOR command <\br>
 The filter will show the packet that contains the zip. After that we click the package then right click it, press follow. Choose TCP stream, then show the data as Raw. Save the file as zip </br>
-![messageImage_1632536509694](https://user-images.githubusercontent.com/91376801/134772984-00c0fc4e-6275-45ee-b39d-0353c11389df.jpg)
+<img width="956" alt="jarkom 6 1" src="https://user-images.githubusercontent.com/91376801/134772984-00c0fc4e-6275-45ee-b39d-0353c11389df.jpg">
 
 
 **10. Also there is "history.txt" which probably contains the history of the bash server! Use the contents of "history.txt" to find the password to open the secret file in "secret.zip"!**
 
 
 To find the history.txt we use `ftp-data.command contains "STOR history.txt"`. The filter will show the packet that contains the history.txt. After that we click the package then right click it, press follow. Choose TCP stream, then show the data as ascii.</br>
-![messageImage_1632537696923](https://user-images.githubusercontent.com/91376801/134772989-4351e7af-d452-462d-9fee-93cfc547011d.jpg)
+<img width="956" alt="jarkom 6 1" src="https://user-images.githubusercontent.com/91376801/134772989-4351e7af-d452-462d-9fee-93cfc547011d.jpg">
+
 But we find the history.txt, the program direct to bukanapaapa.txt. so we use the same step `ftp-data.command contains "STOR bukanapaapa.txt"` </br>
-![messageImage_1632537381989](https://user-images.githubusercontent.com/91376801/134772986-6a57b8fe-904e-4baf-bdea-45ee916a61d7.jpg)
+
+<img width="956" alt="jarkom 6 1" src="https://user-images.githubusercontent.com/91376801/134772986-6a57b8fe-904e-4baf-bdea-45ee916a61d7.jpg">
+
 last we find
-![messageImage_1632537427842](https://user-images.githubusercontent.com/91376801/134772988-88450f1c-fd20-4c3b-9659-7037d0c0e7c0.jpg)
+
+<img width="956" alt="jarkom 6 1" src="https://user-images.githubusercontent.com/91376801/134772988-88450f1c-fd20-4c3b-9659-7037d0c0e7c0.jpg">
 
 
 **11.Filter so that wireshark only picks up packets coming from port 80!**
