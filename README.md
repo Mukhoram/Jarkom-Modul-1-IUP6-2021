@@ -25,6 +25,14 @@ we use `http.authbasic` again here, and by checking the last packet. In the last
 ![3 jarkom](https://user-images.githubusercontent.com/74299958/134666450-461cdcec-3daf-4e6e-96d5-c88e2abfb605.png)
 ![3 jakom 2](https://user-images.githubusercontent.com/74299958/134666508-0dbcf873-f09e-45cf-a1e9-92d55e56a4b1.png)
 
+**7. There are 500 zip files saved to FTP Server with names 0.zip, 1.zip, 2.zip, ..., 499.zip. Save and Open the pdf file. (Hint = the name of the pdf is "Real.pdf")**
+
+To find the pdf, we will use `ftp-data contains Real.pdf` in the filter. The filter will show the packet that contains the pdf. After that we click the package then right click it, press follow. Choose TCP stream, then show the data as Raw. Save the file as pdf. </br>
+
+
+
+
+
 
 **11.Filter so that wireshark only picks up packets coming from port 80!**
 
