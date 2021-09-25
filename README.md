@@ -1,7 +1,7 @@
 # Jarkom-Modul-1-IUP6-2021
 
 
-Mukhoram Dimaputra Bagawan 05111942000006 </br>
+Mukhoram Dimasputra Bagawan 05111942000006 </br>
 Fitriana Zahirah Tsabit 05111942000011 </br>
 Muhammad Rafi Hayla Arifa 05111942000014 </br>
 
@@ -9,20 +9,20 @@ Muhammad Rafi Hayla Arifa 05111942000014 </br>
 </br>
 
 **1. What web server is used on "ichimarumaru.tech"!**
-(Mukhoram Dimaputra)
+(Mukhoram Dimasputra)
 
 By checking the pcap using filter `http.host ==` we can check the we server information. Our answer is `nginx`. </br>
 ![1 jarkom](https://user-images.githubusercontent.com/74299958/134666256-af790e60-1622-4d55-8039-7aa90dcdd7fa.png)
 
 
 **2. Find the packets from the web that use the basic authentication method!**
-(Mukhoram Dimaputra)
+(Mukhoram Dimasputra)
 
 Using `http.authbasic` in the filter, we could find all the packets.</br>
 ![2 jarkom](https://user-images.githubusercontent.com/74299958/134666344-66912e30-d2a4-40f2-b832-f03c70c56123.png)
 
 **3. Follow the instructions at basic.ichimaru maru.tech! Username and password can be obtained from the .pcapng file!**
-(Mukhoram Dimaputra)
+(Mukhoram Dimasputra)
 
 we use `http.authbasic` again here, and by checking the last packet. In the last packet we could check the `Authorization` and open the credentials to get the username and password, which is `kuncimenujulautan` and the pasword is down below. After open the web, we answer the question with our answer.</br>
 ![3 jarkom](https://user-images.githubusercontent.com/74299958/134666450-461cdcec-3daf-4e6e-96d5-c88e2abfb605.png)
@@ -30,7 +30,7 @@ we use `http.authbasic` again here, and by checking the last packet. In the last
 
 
 **5. Login to portal.ichimarumaru.tech then follow the instructions! The username and password can be obtained from the insert query in the users table from the .pcap file!**
-(Mukhoram Dimaputra)
+(Mukhoram Dimasputra)
 
  we search `mysql` in the filter, then open each of the packets. </br>
 <img width="956" alt="jarkom 5 1" src="https://user-images.githubusercontent.com/74299958/134769557-8c6f9c9a-7974-4e2c-8732-5ae255434c5a.png">
@@ -43,7 +43,7 @@ To find username and password we use `ftp.request.command contains "USER" || ftp
 <img width="956" alt="jarkom 6 1" src="https://user-images.githubusercontent.com/91376801/134772982-1da994ca-262e-46f7-afb6-8ba360c105b8.jpg">
 
 **7. There are 500 zip files saved to FTP Server with names 0.zip, 1.zip, 2.zip, ..., 499.zip. Save and Open the pdf file. (Hint = the name of the pdf is "Real.pdf")**
-(Mukhoram Dimaputra)
+(Mukhoram Dimasputra)
 
 To find the pdf, we will use `ftp-data contains Real.pdf` in the filter. The filter will show the packet that contains the pdf. After that we click the package then right click it, press follow. Choose TCP stream, then show the data as Raw. Save the file as pdf. </br>
 ![jarkom 7](https://user-images.githubusercontent.com/74299958/134769335-ebb47a8a-296b-4eac-b29f-e2537f582a7c.png)
