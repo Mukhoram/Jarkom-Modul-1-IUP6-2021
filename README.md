@@ -36,7 +36,7 @@ we use `http.authbasic` again here, and by checking the last packet. In the last
 
 
 To find username and password we use `ftp.request.command contains "USER" || ftp.request.command contains "PASS"`</br> 
-
+![messageImage_1632535448635](https://user-images.githubusercontent.com/91376801/134772982-1da994ca-262e-46f7-afb6-8ba360c105b8.jpg)
 
 **7. There are 500 zip files saved to FTP Server with names 0.zip, 1.zip, 2.zip, ..., 499.zip. Save and Open the pdf file. (Hint = the name of the pdf is "Real.pdf")**
 
